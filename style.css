@@ -99,7 +99,7 @@ section {
   cursor: pointer;
   border: none;
   font-weight: 600;
-  transition: 0.5s;
+  transition: 2s;
 }
 
 .btn-primary {
