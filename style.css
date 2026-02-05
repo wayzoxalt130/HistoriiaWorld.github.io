@@ -23,9 +23,8 @@ section {
   margin: auto;
 }
 
-/* -------------------- */
 /* HEADER */
-/* -------------------- */
+
 .header {
   position: fixed;
   top: 0;
@@ -72,9 +71,8 @@ section {
   color: #a29bfe;
 }
 
-/* -------------------- */
 /* HERO */
-/* -------------------- */
+
 .hero {
   padding-top: 150px;
   text-align: center;
@@ -101,7 +99,7 @@ section {
   cursor: pointer;
   border: none;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .btn-primary {
@@ -124,9 +122,6 @@ section {
   color: white;
 }
 
-/* -------------------- */
-/* GRID + CARDS */
-/* -------------------- */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -147,16 +142,12 @@ section {
   border-color: rgba(162,155,254,0.4);
 }
 
-/* -------------------- */
-/* DARK SECTIONS */
-/* -------------------- */
+
 .section-dark {
   background: #141418;
 }
 
-/* -------------------- */
-/* QUIZ */
-/* -------------------- */
+
 .quiz-box {
   background: #1a1a1f;
   padding: 30px;
