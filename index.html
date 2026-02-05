@@ -2,84 +2,190 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Maths et Physique dans l'Histoire</title>
+  <title>Historiaa — Maths & Physique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <h1>Les Mathématiques et la Physique</h1>
-  <p>Comment elles ont révolutionné l'histoire de l'humanité</p>
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">
+      <span class="logo-icon">H</span>
+      <span class="logo-text">Historiaa</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#home">Accueil</a>
+      <a href="#histoire">Histoire</a>
+      <a href="#savants">Savants</a>
+      <a href="#impact">Impact</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </div>
 </header>
 
-<div class="content">
+<main>
 
-  <section>
-    <h2>1. Les mathématiques dans l’Antiquité</h2>
-    <p>
-      Les mathématiques apparaissent très tôt dans l’histoire.
-      En Égypte et en Mésopotamie, elles servent à mesurer les terres,
-      construire des pyramides et organiser les impôts.
-    </p>
-    <p>
-      Les Grecs, comme Pythagore et Euclide, transforment les mathématiques
-      en une science logique basée sur des démonstrations.
-    </p>
-  </section>
+<!-- savant -->
+<section id="home" class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Explore l’histoire des maths et de la physique <span>comme jamais</span>.</h1>
+      <p>Un site interactif pour comprendre les découvertes, les savants et les idées qui ont façonné notre monde.</p>
+      <a href="#quiz" class="btn btn-primary">Tester tes connaissances</a>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>2. Les mathématiques et le progrès</h2>
-    <p>
-      Grâce aux mathématiques, l’humanité développe la cartographie,
-      l’architecture, la navigation et plus tard l’informatique.
-    </p>
-    <p>
-      Les équations permettent de prévoir, calculer et comprendre le monde.
-      Aujourd’hui, elles sont au cœur des technologies modernes.
-    </p>
-  </section>
+<!-- HISTOIRE -->
+<section id="histoire" class="section">
+  <div class="container">
+    <h2>Les grandes périodes</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Antiquité</h3>
+        <p>Naissance de la géométrie, des nombres et des premières démonstrations.</p>
+      </div>
+      <div class="card">
+        <h3>Renaissance</h3>
+        <p>Explosion des découvertes : mécanique, astronomie, calcul infinitésimal.</p>
+      </div>
+      <div class="card">
+        <h3>Ère moderne</h3>
+        <p>Relativité, quantique, informatique, cosmologie… un nouveau monde.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>3. La naissance de la physique</h2>
-    <p>
-      La physique cherche à comprendre les lois de la nature.
-      Des savants comme Galilée introduisent l’expérimentation scientifique.
-    </p>
-    <p>
-      Isaac Newton formule les lois de la gravitation, expliquant le
-      mouvement des planètes et des objets sur Terre.
-    </p>
-  </section>
+<!-- SAVANTS -->
+<section id="savants" class="section section-dark">
+  <div class="container">
+    <h2>Les savants qui ont changé l’histoire</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Newton</h3>
+        <p>Lois du mouvement, gravitation, calcul infinitésimal.</p>
+      </div>
+      <div class="card">
+        <h3>Einstein</h3>
+        <p>Relativité restreinte et générale, révolution de l’espace-temps.</p>
+      </div>
+      <div class="card">
+        <h3>Gauss</h3>
+        <p>Théorie des nombres, statistiques, géométrie non-euclidienne.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>4. La physique moderne</h2>
-    <p>
-      Au XXᵉ siècle, Albert Einstein révolutionne la science avec la
-      relativité, modifiant notre vision du temps et de l’espace.
-    </p>
-    <p>
-      La physique permet aussi l’électricité, les moteurs, les satellites,
-      les télécommunications et les technologies médicales.
-    </p>
-  </section>
+<!-- IMPACT -->
+<section id="impact" class="section">
+  <div class="container">
+    <h2>Comment ces découvertes ont transformé le monde</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Technologie</h3>
+        <p>GPS, ordinateurs, satellites, énergie… tout repose sur leurs théories.</p>
+      </div>
+      <div class="card">
+        <h3>Santé</h3>
+        <p>IRM, scanners, radiologie : la physique au service de la médecine.</p>
+      </div>
+      <div class="card">
+        <h3>Compréhension du cosmos</h3>
+        <p>Big Bang, trous noirs, expansion de l’univers.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>5. Impact sur l’histoire de l’humanité</h2>
-    <p>
-      Sans les mathématiques et la physique, il n’y aurait pas
-      d’avions, de GPS, d’ordinateurs ni d’exploration spatiale.
-    </p>
-    <p>
-      Ces sciences ont transformé les sociétés, l’économie et la manière
-      dont les humains comprennent l’univers.
-    </p>
-  </section>
+<!-- QUIZ INTERACTIF -->
+<section id="quiz" class="section section-dark">
+  <div class="container">
+    <h2>Quiz interactif</h2>
+    <p>Teste tes connaissances en maths et physique !</p>
 
-</div>
+    <div id="quiz-container" class="quiz-box">
+      <h3 id="question"></h3>
+      <div id="answers"></div>
+      <button id="next-btn" class="btn btn-primary" style="display:none;">Question suivante</button>
+      <p id="score" class="score"></p>
+    </div>
+  </div>
+</section>
 
-<footer>
-  <p> Groupe PWASD– SNT</p>
-</footer>
+</main>
+
+<script>
+// QUESTIONS DU QUIZ
+const questions = [
+  {
+    question: "Qui a formulé la loi de la gravitation universelle ?",
+    answers: ["Einstein", "Newton", "Galilée", "Kepler"],
+    correct: 1
+  },
+  {
+    question: "Quelle théorie décrit le comportement des particules très petites ?",
+    answers: ["Relativité", "Mécanique quantique", "Optique", "Thermodynamique"],
+    correct: 1
+  },
+  {
+    question: "Quel savant est considéré comme le 'Prince des mathématiques' ?",
+    answers: ["Euler", "Gauss", "Poincaré", "Descartes"],
+    correct: 1
+  }
+];
+
+let index = 0;
+let score = 0;
+
+const questionEl = document.getElementById("question");
+const answersEl = document.getElementById("answers");
+const nextBtn = document.getElementById("next-btn");
+const scoreEl = document.getElementById("score");
+
+function loadQuestion() {
+  const q = questions[index];
+  questionEl.textContent = q.question;
+  answersEl.innerHTML = "";
+
+  q.answers.forEach((answer, i) => {
+    const btn = document.createElement("button");
+    btn.textContent = answer;
+    btn.className = "btn btn-outline full-width";
+    btn.onclick = () => checkAnswer(i);
+    answersEl.appendChild(btn);
+  });
+}
+
+function checkAnswer(i) {
+  const correct = questions[index].correct;
+  if (i === correct) {
+    score++;
+  }
+
+  nextBtn.style.display = "block";
+}
+
+nextBtn.onclick = () => {
+  index++;
+  nextBtn.style.display = "none";
+
+  if (index < questions.length) {
+    loadQuestion();
+  } else {
+    questionEl.textContent = "Quiz terminé !";
+    answersEl.innerHTML = "";
+    scoreEl.textContent = `Ton score : ${score} / ${questions.length}`;
+  }
+};
+
+loadQuestion();
+</script>
 
 </body>
 </html>
+
