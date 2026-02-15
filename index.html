@@ -120,21 +120,35 @@
 </main>
 
 <script>
-// QUESTIONS DU QUIZ
-const questions = 
-[ { question: "Qui a formulé la loi de la gravitation universelle ?", answers: ["Galilée", "Newton", "Einstein", "Kepler"], correct: 1 Newton → index 1 }
-{ question: "Quelle est l'ère qui a subi les premières découvertes mathématiques ?", answers: ["Antiquité", "Ère Moderne", "Roblox", "Moyen Âge"], correct: 0 Antiquité → index 0 }
-{ question: "Quel savant est considéré comme le 'Prince des mathématiques' ?", answers: ["Descartes", "Gauss", "Poincaré", "Euler"], correct: 1 // Gauss → index 1 }
+// QUEST
+const questions = [
+  { 
+    question: "Qui a formulé la loi de la gravitation universelle ?", 
+    answers: ["Galilée", "Newton", "Einstein", "Kepler"], 
+    correct: 1 
+  },
+  { 
+    question: "Quelle est l'ère qui a subi les premières découvertes mathématiques ?", 
+    answers: ["Antiquité", "Ère Moderne", "Roblox", "Moyen Âge"], 
+    correct: 0 
+  },
+  { 
+    question: "Quel savant est considéré comme le 'Prince des mathématiques' ?", 
+    answers: ["Descartes", "Gauss", "Poincaré", "Euler"], 
+    correct: 1 
+  }
 ];
 
 let index = 0;
 let score = 0;
 
+// Récup
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 const nextBtn = document.getElementById("next-btn");
 const scoreEl = document.getElementById("score");
 
+// Affi
 function loadQuestion() {
   const q = questions[index];
   questionEl.textContent = q.question;
@@ -154,10 +168,10 @@ function checkAnswer(i) {
   if (i === correct) {
     score++;
   }
-
   nextBtn.style.display = "block";
 }
 
+// Passe à la question suivante
 nextBtn.onclick = () => {
   index++;
   nextBtn.style.display = "none";
@@ -173,6 +187,7 @@ nextBtn.onclick = () => {
 
 loadQuestion();
 </script>
+
 
 </body>
 </html>
